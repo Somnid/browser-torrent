@@ -1,0 +1,66 @@
+Announcement
+{
+	action : "announce",
+	downloaded : 5886616,
+	info_hash : "jY¿ý\↵öS·!ôóÃ]",
+	left : 123355136,
+	numwant : 5,
+	offers: [
+		{
+			offer : {
+				sdp : "{sdp goes here}",
+				type : "offer"
+			},
+			offer_id: "@DêÝÓà¤!jdÙM^³d©"
+		}
+	],
+	peer_id : "-WW0095-1da3cc697714",
+	uploaded : 0
+}
+
+Response to announce
+{
+	action : "announce",
+	complete : 1, //seeders
+	incomplete : 141, //leechers
+	info_hash : "jY¿ý\↵öS·!ôóÃ]",
+	interval : 120 //interval in seconds between asks
+}
+N responses for peer answers
+{
+	action : "announce",
+	answer : {
+		sdp : "{sdp goes here}",
+		type : "answer"
+	},
+	info_hash: "jY¿ý\↵öS·!ôóÃ]",
+	offer_id: "lHbøºZÈ«\MW5æRòã",
+	peer_id: "-WW0091-070e8cb00931"
+}
+
+We respond to answers with ours
+{
+	action : "announce",
+	answer : {
+		sdp : "{sdp goes here}",
+		type : "answer"
+	},
+	info_hash : "jY¿ý\↵öS·!ôóÃ]",
+	offer_id : "0LÜìÑEÕØÃ´÷oº", //from an answer
+	to_peer_id : "-WW0091-9f5648c65f3e" //from an answer
+}
+
+When we are done:
+{
+	action : "announce",
+	downloaded : 129241752,
+	event : "completed",
+	info_hash: "jY¿ý\↵öS·!ôóÃ]",
+	left : 0,
+	numwant : 5,
+	offers : [offers go here],
+	peer_id : "-WW0095-1da3cc697714",
+	uploaded : 0
+}
+
+The action "annouce" is analogous to http://tracker.com/announce fragment.

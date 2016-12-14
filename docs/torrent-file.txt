@@ -1,0 +1,13 @@
+dn - filename
+xl - exact length (bytes)
+xt - exact topic (??)
+as - acceptable source (web link to file)
+xs - exact source, P2P link (??)
+kt - keyword topic (key words to search for)
+mt - manifest topic (??)
+tr - address tracker
+
+
+{
+	announce : [urls], //tracker urls
+}
